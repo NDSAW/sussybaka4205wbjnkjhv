@@ -75,21 +75,25 @@
 </script>
 
 <script>
-  // Detect mobile device
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  document.addEventListener("DOMContentLoaded", function () {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-  if (isMobile) {
-    const link = document.createElement("a");
-    link.href = "Adminpage22.html"; // 🔐 Replace with your secret page
-    link.innerText = "Google Troubleshoot";
-    link.style.display = "block";
-    link.style.textAlign = "center";
-    link.style.marginTop = "40px";
-    link.style.color = "#555";
-    link.style.textDecoration = "underline";
-    document.body.appendChild(link);
-  }
+    if (isMobile) {
+      const link = document.createElement("a");
+      link.href = "Adminpage22.html"; // 🔐 Replace with your secret admin page
+      link.innerText = "Google Troubleshoot";
+      link.style.display = "block";
+      link.style.textAlign = "center";
+      link.style.marginTop = "40px";
+      link.style.color = "#777";
+      link.style.textDecoration = "underline";
+      link.style.fontSize = "14px";
+
+      document.body.appendChild(link);
+    }
+  });
 </script>
+
 
 
 </body>
